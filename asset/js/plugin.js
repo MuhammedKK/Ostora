@@ -26,11 +26,13 @@ $(document).ready(function () {
 
     // Animated Alert
 
-    $('.contact-us a').click(function () {
+    $('.contact-us a').click(function (e) {
+        e.preventDefault();
         $('.popup-alert').fadeIn(500);
     });
 
-    $('.popup-alert a').click(function () {
+    $('.popup-alert a').click(function (e) {
+        e.preventDefault();
         $(this).parents('.popup-alert').fadeOut(500);
     });
 
