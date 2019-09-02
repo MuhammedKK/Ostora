@@ -58,6 +58,55 @@ ul, ol {
 
 /* End Main Rules */
 
+/* Start Popup ALert */
+
+.popup-alert{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:9999;
+    background-color:rgba(89, 85, 85, 0.6);
+    display: none;
+}
+
+.popup-alert .popup-container {
+    width: 600px;
+    background-color: #fff;
+    z-index: 999999;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    padding:10px 0;
+}
+
+.popup-alert .popup-container h2 {
+    font-size: 26px;
+    margin-top: 4px;
+    
+}
+
+.popup-alert .popup-container p {
+    border: 1px solid #ccc;
+    font-size: 17px;
+    padding: 11px;
+    margin-top: 28px;
+}
+
+.popup-alert .popup-container a {
+    text-align:center;
+    display:block;
+    width: 169px;
+    font-size: 15px;
+    padding: 9px 10px;
+    margin-left:10px;
+    box-shadow:none;
+}
+
+/* End Popup ALert */
+
 /* Start Navbar Section */
 
 .navbar {
@@ -154,6 +203,7 @@ ul, ol {
     -moz-border-radius:20px;
     -ms-border-radius:20px;
     -o-border-radius:20px;
+    cursor:pointer;  
 }
 /* End header Section */
 
@@ -382,7 +432,8 @@ footer {
 }
 
 footer .social-icons i{
-    padding:0 7px;
+    font-size:19px;
+    padding:0 6px;
     transition:all .5s ease-in-out;
     -webkit-transition:all .5s ease-in-out;
     -moz-transition:all .5s ease-in-out;
@@ -674,12 +725,14 @@ footer .footer-logo p {font-size:18px}
 .how-to-buy h2 {
     margin:0;
     margin-bottom:70px;
+    font-size: 30px;
 }
 
 .how-to-buy .lead {
     line-height:1.8;
     margin:0;
     padding:0 70px;
+    font-size: 18px;
 }
 
 .skills {
@@ -688,6 +741,7 @@ footer .footer-logo p {font-size:18px}
 
 .skills h2 {
     margin-bottom:50px;
+    font-size:22px
 }
 .skills h2.head-line:after {
     content:"";
@@ -701,7 +755,8 @@ footer .footer-logo p {font-size:18px}
 .skills a {
     display: inline-block;
     width:calc(100% / 5);
-    
+    margin:5px;
+    transition: all .5s ease-in-out;
 }
 
 .skills .simples-of-work img {
@@ -709,10 +764,12 @@ footer .footer-logo p {font-size:18px}
     border-radius:20px;
     cursor:pointer;
     border:1px solid #CCC;
-    box-shadow: 1px 1px 3px 1px #CCC:
+    box-shadow: 1px 1px 3px 1px #CCC;
+    border-radius: 16px;
+    
 }
 .skills .simples-of-work img:hover {
-    transform:scale(1.1) rotate(10deg);
+    transform:scale(1.1);
 }
 
 /* End How To Buy Page */
@@ -895,10 +952,6 @@ footer .footer-logo p {font-size:18px}
         font-size: 14px;
     }
 
-    footer .social-icons i {
-        font-size: 21px;
-        padding: 0 7px
-    }
 
     footer .footer-logo img {
         margin-top: 20px;
@@ -940,6 +993,62 @@ footer .footer-logo p {font-size:18px}
 
     /* End About Page */
 
+    /* Start Model Page */
+    .Simples-for-sale h2 {
+        margin-bottom: 55px;
+    }
+
+    .Simples-for-sale .operations select{
+        display: inline-block; 
+        margin:0 5px 40px;
+    }
+    /* End Model Page */
+
+    /* Start How To Buy Page */
+    .skills h2.head-line:after {
+        width:150px;
+        left:calc(50% - 75px);
+    }
+
+    .skills a {
+        width: calc(100% / 3);
+        margin: 5px;
+    }
+
+    .skills h2 {
+        font-size: 22px;
+    }
+    /* End How To Buy Page */
+
+    /* Start Ad Page */
+    .search select, .search a, .search div {
+        margin: 13px 8px;
+    }
+
+    .search select {
+        width: 146px;
+        font-size: 15px;
+    }
+
+    .search .main-btn {
+        font-size: 15px;
+        padding: 10px 4px;
+    }
+
+    .ad-desc .main-btn {
+        width:168px;
+        font-size:17px;
+    }
+
+    .description .lead{
+        line-height: 1.9;
+    }
+
+    .description iframe {
+        max-width: 100%;
+        margin-bottom: 20px
+    }
+    /* End Ad Page */
 }
 
 /**********************************   Small Screan   *******************************/
@@ -1013,6 +1122,16 @@ footer .footer-logo p {font-size:18px}
     } 
 
     /* End About Page */
+
+    /* Start Ad Page */
+    .search select, .search a, .search div {
+        margin: 0px 5px;
+    }
+
+    .ad-desc .location span {
+        font-size: 24px
+    }
+    /* End Ad Page */
 }
 
 /******************************** Medium Screan *********************************/
